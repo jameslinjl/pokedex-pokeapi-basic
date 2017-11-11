@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Pokedex</title>
+  <link rel="icon" href="https://pokemondb.net/favicon.ico">
+</head>
+<body>
+  <h1>Basic Pokedex</h1>
+  <ol start="{{ ol_start }}">
+  {% for pokemon_result in pokemon_results %}
+    <li>
+    	<a href="/pokemon?name={{ pokemon_result.name }}">
+    		<strong>
+    			{{ pokemon_result.name }}
+    		</strong>
+    	</a>
+    </li>
+  {% endfor %}
+  </ol>
+</body>
+</html>
