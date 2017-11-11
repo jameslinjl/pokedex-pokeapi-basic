@@ -1,18 +1,13 @@
-# pokedex-pokeapi-memcache
+# pokedex-pokeapi-basic
 
-Playing around with flask, pokeapi, and memcached as a teaching tool for beginner web development.
+Playing around with flask and pokeapi as a teaching tool for beginner web development.
 
-Assumes that memcached is running on the same host on port 11211.
-
-Make sure to install memcached for your machine.
-
-Ensure you have a memcache client module installed:
+1) Make sure that you have flask installed:
 ```bash
-pip install pylibmc
+pip install Flask
 ```
 
-Run standard flask application:
+2) Go!
 ```bash
-pip install Flask # if you haven't installed before
-FLASK_APP=app.py flask run
+python app.py # run from inside the repo
 ```
